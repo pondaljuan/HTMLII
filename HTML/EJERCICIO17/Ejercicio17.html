@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio17</title>
+	<base href="https://www.google.com/" target="_blank">
+	<meta name="author" content="Juan Pondal">
+	<meta name="keywords" content="HTML">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {background-color: white;}
+		h1   {color: blue;}
+		p    {color: black;}
+		small {font-size: smaller;}
+	</style>
+</head>
+<body>
+	<p>Este pagina fue editada a las <time>10:00</time> del dia <date>23/10/2020</date></p>
+	<p id="date"></p>
+		<script>
+			document.getElementById("date").innerHTML = Date();
+		</script>
+	<form action="/action_page.php">
+  		<label for="birthday">Birthday:</label>
+  		<input type="date" id="birthday" name="birthday">
+  		<input type="submit">
+	</form>
+	<p><time datetime="1998-02-07"></time></p>
+	<p>Mi cumpleanos es el <date>07/02/1998</date></p>
+	#no esta bien del todo hay que confirmarlo
+</body>
+</html>
